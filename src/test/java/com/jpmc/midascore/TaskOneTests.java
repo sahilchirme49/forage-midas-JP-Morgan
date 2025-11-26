@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TaskOneTests {
+class   TaskOneTests {
     static final Logger logger = LoggerFactory.getLogger(TaskOneTests.class);
 
     @Test
