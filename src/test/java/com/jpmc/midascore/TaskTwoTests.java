@@ -24,7 +24,7 @@ class TaskTwoTests {
     void task_two_verifier() throws InterruptedException {
         String[] transactionLines = fileLoader.loadStrings("/test_data/poiuytrewq.uiop");
         for (String transactionLine : transactionLines) {
-            kafkaProducer.send(transactionLine);
+            kafkaProducer.send(transactionLine); //
         }
         Thread.sleep(2000);
         logger.info("----------------------------------------------------------");
