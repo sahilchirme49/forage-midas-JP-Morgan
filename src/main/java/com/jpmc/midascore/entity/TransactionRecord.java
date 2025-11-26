@@ -16,15 +16,18 @@ public class TransactionRecord {
 
     private float amount;
 
+    private float incentive;
+
     // Empty Constructor (Required for JPA)
     public TransactionRecord() {
     }
 
     // Constructor to easily create records
-    public TransactionRecord(UserRecord sender, UserRecord recipient, float amount) {
+    public TransactionRecord(UserRecord sender, UserRecord recipient, float amount,float incentive) {
         this.sender = sender;
         this.recipient = recipient;
         this.amount = amount;
+        this.incentive = incentive;
     }
 
     // Getters and Setters
@@ -35,4 +38,11 @@ public class TransactionRecord {
     public void setRecipient(UserRecord recipient) { this.recipient = recipient; }
     public float getAmount() { return amount; }
     public void setAmount(float amount) { this.amount = amount; }
+    public float getIncentive() {
+        return incentive;
+    }
+
+    public void setIncentive(float incentive) {
+        this.incentive = incentive;
+    }
 }
